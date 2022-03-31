@@ -1,8 +1,8 @@
-const email = document.getElementById("email");
-const senha = document.getElementById("senha");
-const entrar = document.getElementById("loginBtn");
+const email = document.getElementById('email');
+const senha = document.getElementById('senha');
+const entrar = document.getElementById('loginBtn');
 
-//Requisito 1
+// Requisito 1
 
 function validar() {
   if ((email.value === 'tryber@teste.com') && (senha.value === '123456')) {
