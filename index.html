@@ -101,6 +101,11 @@
           </label>
         </div>
 
+        <label for="agreement" id="label-infos"
+          >Você concorda com o uso das informações acima?
+          <input type="checkbox" name="agreement" id="agreement" value="sim" required/>
+        </label>
+
         <fieldset>
           <legend id="label-rate">Como você avalia a Trybewarts?</legend>
           <label for="1" class="block">1</label>
@@ -134,12 +139,7 @@
           <input type="radio" name="rate" id="10" value="10" />
         </fieldset>
 
-        <label for="agreement" id="label-infos"
-        >Você concorda com o uso das informações acima?
-        <input type="checkbox" name="agreement" id="agreement" required/>
-      </label>
-
-        <button type="submit" id="submit-btn" disabled="true">Enviar</button>
+        <button type="submit" id="submit-btn" disabled="disabled">Enviar</button>
 
       </form>
       <img

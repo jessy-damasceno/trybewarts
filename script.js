@@ -1,13 +1,13 @@
 const email = document.getElementById('email');
 const senha = document.getElementById('senha');
 const entrar = document.getElementById('loginBtn');
-const check = document.getElementById('agreement')
-const botao = document.getElementById('submit-btn')
+const check = document.getElementById('agreement');
+const botao = document.getElementById('submit-btn');
 
 // Requisito 1
 
 function validar() {
-  if ((email.value === 'tryber@teste.com') && (senha.value === '123456')) {
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else alert('Email ou senha inválidos.');
 }
@@ -27,12 +27,12 @@ function contador() {
 
 textArea.addEventListener('input', contador);
 
-//requisito 19
+// Requisito 19
 function ligaBotao() {
-  botao.disabled = true
-if (check.checked) {
-  botao.disabled = false
-}
+  botao.disabled = true;
+  if (check.checked) {
+    botao.disabled = false;
+  }
 }
 
-check.addEventListener('click', ligaBotao)
+check.addEventListener('click', ligaBotao);
