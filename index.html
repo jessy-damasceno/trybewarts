@@ -101,17 +101,18 @@
           </label>
         </div>
 
+        <label for="agreement" id="label-infos"
+          >Você concorda com o uso das informações acima?
+          <input type="checkbox" name="agreement" id="agreement" value="Sim" required/>
+        </label>
+
         <fieldset>
           <legend id="label-rate">Como você avalia a Trybewarts?</legend>
           <label for="1" class="block">1</label>
           <input type="radio" name="rate" id="1" value="1" />
 
           <label for="2" class="block">2</label>
-<<<<<<< Updated upstream
-          <input type="radio" name="rate" id="1" value="2" />
-=======
           <input type="radio" name="rate" id="2" value="2" />
->>>>>>> Stashed changes
 
           <label for="3" class="block">3</label>
           <input type="radio" name="rate" id="3" value="3" />
@@ -137,6 +138,9 @@
           <label for="10" class="block">10</label>
           <input type="radio" name="rate" id="10" value="10" />
         </fieldset>
+
+        <button type="submit" id="submit-btn">Enviar</button>
+
       </form>
       <img
         src="images/trybewarts-colored.svg"
