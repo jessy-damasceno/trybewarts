@@ -11,3 +11,14 @@ function validar() {
 }
 
 entrar.addEventListener('click', validar);
+
+// Requisito 20
+
+const textArea = document.querySelector('.textarea');
+let count = 0;
+
+function contador() {
+  
+}
+
+textArea.addEventListener('input', contador);
