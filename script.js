@@ -38,17 +38,21 @@ function ligaBotao() {
 check.addEventListener('click', ligaBotao);
 
 // Requisito 21
-function preencherForms() {
-  const formContent = document.querySelector('#evaluation-form');
-  const itensForm = [];
+function pegaNome() {
+  const name = document.querySelector('#input-name').value;
+  const lname = document.querySelector('#input-lastname').value;
 
-  for (let i = 0; i < formContent.elements.length; i += 1) {
-    itensForm.push(formContent.elements[i].value);
-  }
-  console.log(itensForm);
+  return `Nome: ${name} ${lname}`;
 }
 
-check.addEventListener('click', preencherForms);
+function pegaEmail() {
+  return `Email: ${document.querySelector('#input-email').value}`;
+}
 
-window.onload
-localStorage.getItem('form')
+function pegaCasa() {
+  return `Casa: ${document.querySelector('#house').value}`;
+}
+
+function pegaFamilia() {
+  return console.log(`Família: ${document.querySelector('input[name="family"]:checked').value}`);
+}

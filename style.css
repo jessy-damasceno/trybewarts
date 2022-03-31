@@ -42,3 +42,8 @@ main {
   font-style: italic;
   font-size: 0.8rem;
 }
+
+#family {
+  display: flex;
+  flex-direction: column;
+}
