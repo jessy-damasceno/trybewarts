@@ -87,16 +87,19 @@
           Python</label
         >
 
-        <label for="textarea" class="textarea"
-          >Deixe seu comentário: <br />
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-            maxlength="500"
-          ></textarea>
-        </label>
+        <div class="ta">
+          <label for="textarea" class="textarea"
+            >Deixe seu comentário:
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              maxlength="500"
+            ></textarea>
+            <p id="contador">0 caracteres.</p>
+          </label>
+        </div>
 
         <fieldset>
           <legend id="label-rate">Como você avalia a Trybewarts?</legend>
@@ -104,7 +107,11 @@
           <input type="radio" name="rate" id="1" value="1" />
 
           <label for="2" class="block">2</label>
+<<<<<<< Updated upstream
           <input type="radio" name="rate" id="1" value="2" />
+=======
+          <input type="radio" name="rate" id="2" value="2" />
+>>>>>>> Stashed changes
 
           <label for="3" class="block">3</label>
           <input type="radio" name="rate" id="3" value="3" />

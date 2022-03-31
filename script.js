@@ -14,11 +14,13 @@ entrar.addEventListener('click', validar);
 
 // Requisito 20
 
-const textArea = document.querySelector('.textarea');
+const textArea = document.querySelector('#textarea');
+const textoContador = document.querySelector('#contador');
 let count = 0;
 
 function contador() {
-  
+  count = textArea.value.length;
+  textoContador.innerText = `${count} caracteres.`;
 }
 
 textArea.addEventListener('input', contador);
