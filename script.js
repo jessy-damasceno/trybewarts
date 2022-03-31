@@ -17,7 +17,7 @@ entrar.addEventListener('click', validar);
 // Requisito 20
 
 const textArea = document.querySelector('#textarea');
-const textoContador = document.querySelector('#contador');
+const textoContador = document.querySelector('#counter');
 let count = 0;
 
 function contador() {
