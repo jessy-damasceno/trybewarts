@@ -54,5 +54,5 @@ function pegaCasa() {
 }
 
 function pegaFamilia() {
-  return console.log(`Família: ${document.querySelector('input[name="family"]:checked').value}`);
+  return `Família: ${document.querySelector('input[name="family"]:checked').value}`;
 }
