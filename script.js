@@ -38,8 +38,7 @@ function ligaBotao() {
 check.addEventListener('click', ligaBotao);
 
 // Requisito 21
-function preencherForms(e) {
-  e.target.preventDefault();
+function preencherForms() {
   const formContent = document.querySelector('#evaluation-form');
   const itensForm = [];
 
@@ -49,4 +48,7 @@ function preencherForms(e) {
   console.log(itensForm);
 }
 
-botao.addEventListener('click', preencherForms);
+check.addEventListener('click', preencherForms);
+
+window.onload
+localStorage.getItem('form')
