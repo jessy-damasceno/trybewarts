@@ -18,11 +18,11 @@ entrar.addEventListener('click', validar);
 
 const textArea = document.querySelector('#textarea');
 const textoContador = document.querySelector('#counter');
-let count = 0;
 
 function contador() {
-  count = textArea.value.length;
-  textoContador.innerText = `${count} caracteres.`;
+  let count = 500;
+  count -= textArea.value.length;
+  textoContador.innerText = `Faltam ${count} caracteres`;
 }
 
 textArea.addEventListener('input', contador);
