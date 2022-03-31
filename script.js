@@ -36,3 +36,17 @@ function ligaBotao() {
 }
 
 check.addEventListener('click', ligaBotao);
+
+// Requisito 21
+function preencherForms(e) {
+  e.target.preventDefault();
+  const formContent = document.querySelector('#evaluation-form');
+  const itensForm = [];
+
+  for (let i = 0; i < formContent.elements.length; i += 1) {
+    itensForm.push(formContent.elements[i].value);
+  }
+  console.log(itensForm);
+}
+
+botao.addEventListener('click', preencherForms);
