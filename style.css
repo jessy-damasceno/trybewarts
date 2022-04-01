@@ -94,23 +94,36 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
-  padding: 12px;
+  padding: 24px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
 
   /* box shadow --> https://getcssscan.com/css-box-shadow-examples */
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 16px auto;
 }
 
-/* ---------- MAIN FORMS ---------- */
 #trybewarts-forms-logo {
   height: 500px;
   margin: auto;
 }
 
-.nome .casa {
+/* ---------- MAIN FORMS ---------- */
+.nome , .casa {
   display: flex;
+  justify-content: space-between;
+}
+
+.nome input {
+  width: 49%;
+}
+
+.casa #house {
+  width: 25%;
+}
+
+.casa #input-email {
+  width: 73%;
 }
 
 #rate {
