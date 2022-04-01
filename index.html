@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
@@ -30,11 +31,11 @@
 
   <main>
     <form action="" method="get" id="evaluation-form">
-      <div class="nome">
+      <section class="nome">
         <input type="text" id="input-name" class="mb-3 form-control" placeholder="Nome" />
         <input type="text" id="input-lastname" class="mb-3 form-control" placeholder="Sobrenome" />
-      </div>
-      <div class="casa">
+      </section>
+      <section class="casa">
         <input type="email" id="input-email" class="mb-3 form-control" placeholder="Email" />
         <select name="house" id="house" class="mb-3 form-select">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -42,18 +43,24 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
-      </div>
-      <p id="label-family">Qual sua família?</p>
-      <label for="family" id="family">
-        <input type="radio" name="family" value="Frontend" id="frontend" />
-        <label for="frontend">Frontend</label>
+      </section>
+      <section class="mb-3 family">
+        <p id="label-family" class="bolder">Qual sua família?</p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="family" value="Frontend" id="frontend" />
+          <label class="form-check-label" for="frontend">Frontend</label>
+        </div>
 
-        <input type="radio" name="family" value="Backend" id="backend" />
-        <label for="backend">Backend</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="family" value="Backend" id="backend" />
+          <label class="form-check-label" for="backend">Backend</label>
+        </div>
 
-        <input type="radio" name="family" value="FullStack" id="fullstack" />
-        <label for="fullstack">FullStack</label>
-      </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="family" value="FullStack" id="fullstack" />
+          <label class="form-check-label" for="fullstack">FullStack</label>
+        </div>
+      </section>
 
       <label for="materias" id="label-content mb-3 form-check">
         Qual conteúdo você está com mais vontade de aprender?</label>

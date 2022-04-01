@@ -126,6 +126,10 @@ main {
   width: 73%;
 }
 
+.bolder {
+  font-weight: 600;
+}
+
 #rate {
   display: flex;
 }
