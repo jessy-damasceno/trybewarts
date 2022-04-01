@@ -61,9 +61,23 @@ function pegaFamilia() {
 
 function pegaMaterias() {
   const materias = [];
+  const hofs = document.getElementById('hofs');
+  const jest = document.getElementById('jest');
+  const promises = document.getElementById('promises');
+  const react = document.getElementById('react');
+  const sql = document.getElementById('sql');
+  const python = document.getElementById('python');
+
+  python.value = " Python";
+  sql.value = " SQL";
+  react.value = " React";
+  promises.value = " Promises";
+  jest.value = " Jest";
+  hofs.value = " Hofs";
+
   document
-    .querySelectorAll('input[name="materias"]:checked')
-    .forEach((materia) => {
+  .querySelectorAll('input[name="materias"]:checked')
+  .forEach((materia) => {
       materias.push(materia.value);
     });
   return `Matérias: ${materias}`;
@@ -74,9 +88,25 @@ function pegaNota() {
 }
 
 function pegaObservacao() {
-  return `Avaliação: ${document.querySelector('#textarea').value}`;
+  return `Observações: ${document.querySelector('#textarea').value}`;
 }
 
-// function algumac(event) {
-//   event.preventDefault()
-// }
+ function apagaForm(event) {
+   const construcao = [pegaNome(), pegaEmail(), pegaCasa(), pegaFamilia(), pegaMaterias(), pegaNota(), pegaObservacao()];
+   const ol = document.createElement('ol');
+
+   event.preventDefault();
+   form.innerHTML = '';
+   form.appendChild(ol)
+   const buscaol = form.firstChild
+   for (let i = 0; i < construcao.length; i += 1) {
+     criaValor.innerText = construcao[i];
+     buscaol.appendChild(criaValor.cloneNode(true));
+     
+   }
+}
+
+const form = document.getElementById('evaluation-form');
+const criaValor = document.createElement('li')
+
+botao.addEventListener('click', apagaForm)
