@@ -88,6 +88,7 @@
 main {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 #evaluation-form {
@@ -127,6 +128,7 @@ main {
 }
 
 .bolder {
+  font-size: 1.1rem;
   font-weight: 600;
 }
 

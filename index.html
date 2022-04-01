@@ -31,20 +31,20 @@
 
   <main>
     <form action="" method="get" id="evaluation-form">
-      <section class="nome">
-        <input type="text" id="input-name" class="mb-3 form-control" placeholder="Nome" />
-        <input type="text" id="input-lastname" class="mb-3 form-control" placeholder="Sobrenome" />
+      <section class="mb-3 nome">
+        <input type="text" id="input-name" class="form-control" placeholder="Nome" />
+        <input type="text" id="input-lastname" class="form-control" placeholder="Sobrenome" />
       </section>
-      <section class="casa">
-        <input type="email" id="input-email" class="mb-3 form-control" placeholder="Email" />
-        <select name="house" id="house" class="mb-3 form-select">
+      <section class="mb-3 casa">
+        <input type="email" id="input-email" class="form-control" placeholder="Email" />
+        <select name="house" id="house" class="form-select">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </section>
-      <section class="mb-3 family">
+      <section class="mb-3">
         <p id="label-family" class="bolder">Qual sua família?</p>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="family" value="Frontend" id="frontend" />
@@ -62,35 +62,47 @@
         </div>
       </section>
 
-      <label for="materias" id="label-content mb-3 form-check">
-        Qual conteúdo você está com mais vontade de aprender?</label>
-      <div id="checkzinhos">
-        <input type="checkbox" name="materias" value="HoFs" id="hofs" class="subject" />
-        <label for="hofs">HoFs</label>
+      <section class="mb-3">
+        <p class="bolder">Qual conteúdo você está com mais vontade de aprender?</p>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="HoFs" id="hofs" class="form-check-input" />
+          <label class="form-check-label" for="hofs">HoFs</label>
+        </div>
 
-        <input type="checkbox" name="materias" value="Jest" id="jest" class="subject" />
-        <label for="jest">Jest</label>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="Jest" id="jest" class="form-check-input" />
+          <label class="form-check-label" for="jest">Jest</label>
+        </div>
 
-        <input type="checkbox" name="materias" value="Promises" id="promises" class="subject" />
-        <label for="promises">Promises</label>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="Promises" id="promises" class="form-check-input" />
+          <label class="form-check-label" for="promises">Promises</label>
+        </div>
 
-        <input type="checkbox" name="materias" value="React" id="react" class="subject" />
-        <label for="react">React</label>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="React" id="react" class="form-check-input" />
+          <label class="form-check-label" for="react">React</label>
+        </div>
 
-        <input type="checkbox" name="materias" value="SQL" id="sql" class="subject" />
-        <label for="sql">SQL</label>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="SQL" id="sql" class="form-check-input" />
+          <label class="form-check-label" for="sql">SQL</label>
+        </div>
 
-        <input type="checkbox" name="materias" value="Python" id="python" class="subject" />
-        <label for="python">Python</label>
-      </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" name="materias" value="Python" id="python" class="form-check-input" />
+          <label class="form-check-label" for="python">Python</label>
+        </div>
+        </div>
+      </section>
 
-      <div class="ta">
+      <section class="mb-3">
         <label for="textarea" class="textarea">
           Deixe seu comentário:
           <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
           <p id="counter">Faltam 500 caracteres</p>
         </label>
-      </div>
+      </section>
 
       <label for="agreement" id="label-infos">
         Você concorda com o uso das informações acima?
