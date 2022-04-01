@@ -37,7 +37,7 @@ function ligaBotao() {
 
 check.addEventListener('click', ligaBotao);
 
-// Requisito 21
+// Requisito 21   -----> https://www.javascripttutorial.net/javascript-dom/javascript-checkbox/ <-----
 function pegaNome() {
   const name = document.querySelector('#input-name').value;
   const lname = document.querySelector('#input-lastname').value;
@@ -54,5 +54,29 @@ function pegaCasa() {
 }
 
 function pegaFamilia() {
-  return `Família: ${document.querySelector('input[name="family"]:checked').value}`;
+  return `Família: ${
+    document.querySelector('input[name="family"]:checked').value
+  }`;
 }
+
+function pegaMaterias() {
+  const materias = [];
+  document
+    .querySelectorAll('input[name="materias"]:checked')
+    .forEach((materia) => {
+      materias.push(materia.value);
+    });
+  return `Matérias: ${materias}`;
+}
+
+function pegaNota() {
+  return `Avaliação: ${document.querySelector('input[name="rate"]:checked').value}`;
+}
+
+function pegaObservacao() {
+  return `Avaliação: ${document.querySelector('#textarea').value}`;
+}
+
+// function algumac(event) {
+//   event.preventDefault()
+// }

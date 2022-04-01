@@ -33,8 +33,14 @@ main {
   display: flex;
 }
 
-.block {
-  margin-left: 10px;
+#rate {
+  display: flex;
+}
+
+#rate div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .textarea p {
