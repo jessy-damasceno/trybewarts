@@ -63,7 +63,7 @@
       </section>
 
       <section class="mb-3">
-        <p class="bolder">Qual conteúdo você está com mais vontade de aprender?</p>
+        <p class="bolder" id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
         <div class="form-check form-check-inline">
           <input type="checkbox" name="materias" value="HoFs" id="hofs" class="form-check-input" />
           <label class="form-check-label" for="hofs">HoFs</label>
@@ -96,14 +96,12 @@
       </section>
 
       <section class="mb-3">
-        <label for="textarea" class="textarea">
-          Deixe seu comentário:
-          <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-          <p id="counter">Faltam 500 caracteres</p>
-        </label>
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea class="form-control" name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <p id="counter">Faltam 500 caracteres</p>
       </section>
 
-      <label for="agreement" id="label-infos">
+      <label for="agreement" id="label-infos" class="bolder">
         Você concorda com o uso das informações acima?
         <input type="checkbox" name="agreement" id="agreement" value="sim" required />
       </label>
