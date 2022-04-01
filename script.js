@@ -1,23 +1,25 @@
-const email = document.getElementById("email");
-const senha = document.getElementById("senha");
-const entrar = document.getElementById("loginBtn");
-const check = document.getElementById("agreement");
-const botao = document.getElementById("submit-btn");
+const email = document.getElementById('email');
+const senha = document.getElementById('senha');
+const entrar = document.getElementById('loginBtn');
+const check = document.getElementById('agreement');
+const botao = document.getElementById('submit-btn');
+const form = document.getElementById('evaluation-form');
+const criaValor = document.createElement('li');
 
 // Requisito 1
 
 function validar() {
-  if (email.value === "tryber@teste.com" && senha.value === "123456") {
-    alert("Olá, Tryber!");
-  } else alert("Email ou senha inválidos.");
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    alert('Olá, Tryber!');
+  } else alert('Email ou senha inválidos.');
 }
 
-entrar.addEventListener("click", validar);
+entrar.addEventListener('click', validar);
 
 // Requisito 20
 
-const textArea = document.querySelector("#textarea");
-const textoContador = document.querySelector("#counter");
+const textArea = document.querySelector('#textarea');
+const textoContador = document.querySelector('#counter');
 
 function contador() {
   let count = 500;
@@ -25,7 +27,7 @@ function contador() {
   textoContador.innerText = `Faltam ${count} caracteres`;
 }
 
-textArea.addEventListener("input", contador);
+textArea.addEventListener('input', contador);
 
 // Requisito 19
 function ligaBotao() {
@@ -35,22 +37,22 @@ function ligaBotao() {
   }
 }
 
-check.addEventListener("click", ligaBotao);
+check.addEventListener('click', ligaBotao);
 
 // Requisito 21   -----> https://www.javascripttutorial.net/javascript-dom/javascript-checkbox/ <-----
 function pegaNome() {
-  const name = document.querySelector("#input-name").value;
-  const lname = document.querySelector("#input-lastname").value;
+  const name = document.querySelector('#input-name').value;
+  const lname = document.querySelector('#input-lastname').value;
 
   return `Nome: ${name} ${lname}`;
 }
 
 function pegaEmail() {
-  return `Email: ${document.querySelector("#input-email").value}`;
+  return `Email: ${document.querySelector('#input-email').value}`;
 }
 
 function pegaCasa() {
-  return `Casa: ${document.querySelector("#house").value}`;
+  return `Casa: ${document.querySelector('#house').value}`;
 }
 
 function pegaFamilia() {
@@ -61,23 +63,20 @@ function pegaFamilia() {
 
 function pegaMaterias() {
   const materias = [];
-  const hofs = document.getElementById("hofs");
-  const jest = document.getElementById("jest");
-  const promises = document.getElementById("promises");
-  const react = document.getElementById("react");
-  const sql = document.getElementById("sql");
-  const python = document.getElementById("python");
-
-  python.value = " Python";
-  sql.value = " SQL";
-  react.value = " React";
-  promises.value = " Promises";
-  jest.value = " Jest";
-  hofs.value = " Hofs";
-
+  const hofs = document.getElementById('hofs');
+  const jest = document.getElementById('jest');
+  const promises = document.getElementById('promises');
+  const react = document.getElementById('react');
+  const sql = document.getElementById('sql');
+  const python = document.getElementById('python');
+  python.value = ' Python';
+  sql.value = ' SQL';
+  react.value = ' React';
+  promises.value = ' Promises';
+  jest.value = ' Jest';
+  hofs.value = ' Hofs';
   document
-    .querySelectorAll('input[name="materias"]:checked')
-    .forEach((materia) => {
+    .querySelectorAll('input[name="materias"]:checked').forEach((materia) => {
       materias.push(materia.value);
     });
   return `Matérias: ${materias}`;
@@ -90,7 +89,7 @@ function pegaNota() {
 }
 
 function pegaObservacao() {
-  return `Observações: ${document.querySelector("#textarea").value}`;
+  return `Observações: ${document.querySelector('#textarea').value}`;
 }
 
 function apagaForm(event) {
@@ -103,10 +102,9 @@ function apagaForm(event) {
     pegaNota(),
     pegaObservacao(),
   ];
-  const ol = document.createElement("ol");
-
+  const ol = document.createElement('ol');
   event.preventDefault();
-  form.innerHTML = "";
+  form.innerHTML = '';
   form.appendChild(ol);
   const buscaol = form.firstChild;
   for (let i = 0; i < construcao.length; i += 1) {
@@ -115,7 +113,4 @@ function apagaForm(event) {
   }
 }
 
-const form = document.getElementById("evaluation-form");
-const criaValor = document.createElement("li");
-
-botao.addEventListener("click", apagaForm);
+botao.addEventListener('click', apagaForm);
