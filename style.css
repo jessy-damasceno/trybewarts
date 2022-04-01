@@ -1,12 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: IBM Plex Sans Arabic, sans-serif;
 }
 
+/* <------- HEADER -------> */
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   background-color: rgb(50, 167, 145);
+}
+
+#trybewarts-header-title {
+  font-family: IBM Plex Sans Arabic, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  color: rgb(10, 16, 20);
+}
+
+#trybewarts-header-title:hover {
+  opacity: 0.8;
+}
+
+.trybewarts-header-logo {
+  width: 3.7vw;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.trybewarts-login div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Header input */
+.trybewarts-login input {
+  border: 0;
+  padding: 0 4px;
+  margin-bottom: 4px;
+  font-family: IBM Plex Sans Arabic, sans-serif;
+  font-size: 0.9rem;
+  width: 85%;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+}
+
+.trybewarts-login input::placeholder {
+  color: black;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.trybewarts-login button {
+  align-self: stretch;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4px 18px 8px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.trybewarts-login button:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .header form {
@@ -14,19 +84,29 @@
   align-items: baseline;
 }
 
+/* <------- MAIN -------> */
 main {
   display: flex;
+  align-items: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
-  border: 1px solid black;
+  padding: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
+
+  /* box shadow --> https://getcssscan.com/css-box-shadow-examples */
+  border-radius: 8px;
+  margin: 16px auto;
 }
 
+/* ---------- MAIN FORMS ---------- */
 #trybewarts-forms-logo {
   height: 500px;
+  margin: auto;
 }
 
 .nome .casa {
