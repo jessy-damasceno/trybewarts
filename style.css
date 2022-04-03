@@ -165,3 +165,27 @@ footer span {
   font-weight: 600;
   letter-spacing: 12px;
 }
+
+@media screen and ( max-width : 320px ) {
+
+  .header h1 , img {
+    display: none;
+  }
+
+  .header input {
+    width: 60vw;
+  }
+
+  .header button {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }
+
+  #evaluation-form {
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+    padding: 6px;
+  }
+}
