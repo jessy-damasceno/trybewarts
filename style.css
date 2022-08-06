@@ -166,9 +166,15 @@ footer span {
   letter-spacing: 12px;
 }
 
-@media screen and ( max-width : 320px ) {
+/* <---------- Media Queries ----------> */
 
-  .header h1 , img {
+@media screen and ( max-width : 480px ) {
+
+  img {
+    width: 80%;
+  }
+
+  .header h1 , .header img {
     display: none;
   }
 
@@ -182,10 +188,21 @@ footer span {
     right: 20px;
   }
 
+  main {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+
   #evaluation-form {
     flex-direction: column;
     border: none;
     box-shadow: none;
     padding: 6px;
+    width: 100vw;
   }
+}
+
+@media screen and ( min-width : 480px and max-width : 768px ) {
+
+
 }
