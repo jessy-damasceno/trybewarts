@@ -1,5 +1,9 @@
 # Boas vindas ao repositório do projeto Trybewarts Wizarding School! :mage:
 
+<img src="./trybewarts.png" alt="Trybewarts" />
+
+## Veja a aplicação em: https://trybewarts-mu.vercel.app/
+
 # Sumário
 
 * [Habilidades](#habilidades)
